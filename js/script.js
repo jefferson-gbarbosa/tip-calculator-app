@@ -29,10 +29,12 @@ function peopleInputFun(){
     calculateTip();
     if(peopleValue < 1){
         erro.style.display = "initial";
-        peopleInput.style.border = '1px solid red'
+        peopleInput.style.border = '2px solid #d93025'
+        peopleInput.style.outlineColor = "#d93025"
     }else{
         erro.style.display = "none";
         peopleInput.style.border = 'none';
+        peopleInput.style.outlineColor = "hsl(172, 67%, 45%)"
         calculateTip();
     }
 }

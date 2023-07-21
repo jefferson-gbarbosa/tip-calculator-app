@@ -113,7 +113,8 @@ form,.outputs{
 }
 .error{
     display: none;
-    color: red;
+    color: #d93025;
+    margin-left: 5.1rem;
 }
 .outputs{
     gap: 2rem;
