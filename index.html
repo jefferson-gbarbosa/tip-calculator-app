@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- link google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <!-- link css -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  
+  <div class="logo">
+    <img src="images/logo.svg" alt="logo image">
+  </div>
+  <div class="card">
+    <div class="tip-calculator">
+      <form action="#">
+        <label>Bill
+          <input type="number" name="bill-input" class="bill-input" id="bill-input" placeholder="0.0">
+        </label>
+        <h3>Select Tip %</h3>
+        <div class="tip-select">
+          <div class="tips tip-5">5%</div>
+          <div class="tips tip-10">10%</div>
+          <div class="tips tip-15">15%</div>
+          <div class="tips tip-25 active-tip">25%</div>
+          <div class="tips tip-50">50%</div>
+          <div class="tip-custom"><input type="number" name="tip-custom" id="tip-custom" placeholder="Custom"></div>
+        </div>
+        <label>Number of People
+          <span class="error">Can't be zero</span>
+          <input type="number" id="input-people" class="input-people" placeholder="1">
+        </label>
+      </form>
+      <div class="outputs">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="tip-amount">$4.27</div>
+        </div>
+        <div class="total">
+          <div class="text">
+            <p>Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="total-amount">$32.79</div>
+        </div>
+        <button class="button-reset" id="btnReset">Reset</button>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jefferson Goçalves</a>.
+  </div>
+  <!-- script js -->
+  <script src="js/script.js"></script>
+</body>
+</html>
