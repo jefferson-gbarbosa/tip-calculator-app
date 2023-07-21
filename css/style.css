@@ -75,11 +75,11 @@ form,.outputs{
     padding: 3rem;  
 }
 .bill-input{
-    background-image: url("/images/icon-dollar.svg");
+    background-image: url("../images/icon-dollar.svg");
     margin-bottom: 2rem;
 }
 .input-people{
-    background-image: url("/images/icon-person.svg");
+    background-image: url("../images/icon-person.svg");
     margin-bottom: 2rem;
 }
 .tip-select{
