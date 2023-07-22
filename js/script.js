@@ -5,7 +5,8 @@ const totalPerson = document.querySelector('#total-amount');
 const tips = document.querySelectorAll('.tips');
 const tipCustom = document.querySelector('#tip-custom');
 const btnReset = document.querySelector('#btnReset');
-const erro = document.querySelector('.error');
+const eTxtBill = document.querySelector('.error-b');
+const eTxtPeople = document.querySelector('.error-p');
 
 let billValue = 0.0;
 let peopleValue = 1;
@@ -21,24 +22,33 @@ tipCustom.addEventListener('input',tipInputFun);
 btnReset.addEventListener('click',reset);
 
 function billInputFun(){
-    billValue = parseFloat(billInput.value);
+    billValue = parseFloat(billInput.value);  
     calculateTip();
+    if(billValue < 1){
+        eTxtBill.style.display = "initial";
+        billInput.style.border = '2px solid #d93025'
+        billInput.style.outlineColor = "#d93025"
+    }else{
+        eTxtBill.style.display = "none";
+        billInput.style.border = 'none';
+        billInput.style.outlineColor = "hsl(172, 67%, 45%)"
+        calculateTip();
+    }  
 }
 function peopleInputFun(){
     peopleValue = parseFloat(peopleInput.value);
-    calculateTip();
+    calculateTip();    
     if(peopleValue < 1){
-        erro.style.display = "initial";
+        eTxtPeople.style.display = "initial";
         peopleInput.style.border = '2px solid #d93025'
         peopleInput.style.outlineColor = "#d93025"
     }else{
-        erro.style.display = "none";
+        eTxtPeople.style.display = "none";
         peopleInput.style.border = 'none';
         peopleInput.style.outlineColor = "hsl(172, 67%, 45%)"
         calculateTip();
     }
-}
-
+}  
 function handleClick(){
     tips.forEach((val) => {
         val.classList.remove('active-tip');

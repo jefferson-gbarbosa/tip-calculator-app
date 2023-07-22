@@ -21,6 +21,7 @@
     <div class="tip-calculator">
       <form action="#">
         <label>Bill
+          <span class="error-b">Can't be zero</span>
           <input type="number" name="bill-input" class="bill-input" id="bill-input" placeholder="0.0">
         </label>
         <h3>Select Tip %</h3>
@@ -30,10 +31,10 @@
           <div class="tips tip-15">15%</div>
           <div class="tips tip-25 active-tip">25%</div>
           <div class="tips tip-50">50%</div>
-          <div class="tip-custom"><input type="number" name="tip-custom" id="tip-custom" placeholder="Custom"></div>
+          <div class="tip-custom"><input type="number" id="tip-custom" placeholder="Custom"></div>
         </div>
         <label>Number of People
-          <span class="error">Can't be zero</span>
+          <span class="error-p">Can't be zero</span>
           <input type="number" id="input-people" class="input-people" placeholder="1">
         </label>
       </form>
@@ -58,7 +59,7 @@
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Jefferson Goçalves</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/jefferson-gbarbosa">Jefferson Goçalves</a>.
   </div>
   <!-- script js -->
   <script src="js/script.js"></script>

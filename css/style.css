@@ -62,7 +62,7 @@ form,.outputs{
 }
 /* TIP CALCULATE */
 .logo{
-    margin-block: 4rem;
+    margin-block: 3rem;
 }
 .card{
     width: 780px;
@@ -111,10 +111,14 @@ form,.outputs{
     background-color: var(--strong-cyan);
     font-weight: bolder;
 }
-.error{
+.error-p,
+.error-b{
     display: none;
     color: #d93025;
     margin-left: 5.1rem;
+}
+.error-b{
+    margin-left: 17rem;
 }
 .outputs{
     gap: 2rem;
@@ -181,5 +185,14 @@ form,.outputs{
     }
     form,.outputs{
         width: 100%;
+    }
+    .error-b {
+        margin-left: 8rem;
+    }
+    .error-p{
+        margin-left: 0;
+    }
+    label{
+        display: contents;
     }
 }
