@@ -61,7 +61,7 @@ form,.outputs{
     flex-direction: column;
 }
 /* TIP CALCULATE */
-.logo{
+.header-logo{
     margin-block: 3rem;
 }
 .card{
@@ -158,14 +158,13 @@ form,.outputs{
     border-radius: 5px;
     cursor: pointer;
 }
-
-.attribution { 
+footer{ 
     color: var(--very-dark-cyan);
     font-size: 1.4rem; 
     text-align: center; 
     margin-block: 1rem;
 }
-.attribution a { 
+footer a { 
     text-decoration: none;
     color:var(--link); 
 }
