@@ -32,7 +32,7 @@ body{
     background-color: var(--light-grayish-cyan);
 }
 label,
-h3{
+h2{
     font-size: 1.6rem;
     color: var(--dark-grayish-cyan);
     margin-bottom: 0.3rem;
